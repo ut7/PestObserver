@@ -8,6 +8,12 @@ RUN pip install pdfminer
 
 RUN R -e "install.packages('x.ent')"
 
+RUN cd /opt \
+ && wget --quiet http://igm.univ-mlv.fr/~unitex/Unitex3.0.zip \
+ && unzip Unitex3.0.zip \
+ && (cd Unitex3.0/Src/C++/build && make install) \
+ && rm Unitex3.0.zip
+
 COPY ini.json /usr/local/lib/R/site-library/x.ent/www/config/ini.json
 
 RUN mkdir /work

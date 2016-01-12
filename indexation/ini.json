@@ -58,6 +58,36 @@
       "get": "all"
     }
   ],
+  "unitex": {
+    "system": {
+      "tool_unitex": "/opt/Unitex3.0/App/UnitexToolLogger",
+      "main_graph": "/usr/local/lib/R/site-library/x.ent/Unitex/graphs/VESPA.grf",
+      "my_unitex": "/opt/Unitex3.0/French",
+      "dico": [
+        "/opt/Unitex3.0/French/Dela/dela-fr-public.bin",
+        "/usr/local/lib/R/site-library/x.ent/Unitex/dicos/Delaf_Communes_France_FR_utf8.bin",
+        "/usr/local/lib/R/site-library/x.ent/Unitex/dicos/Delaf_Toponyme_Departement_France_FR_utf8.bin",
+        "/usr/local/lib/R/site-library/x.ent/Unitex/dicos/Delaf_Toponyme_Region_France_FR_utf8.bin"
+      ]
+    },
+    "result": [
+      {
+        "tag": "n",
+        "tag_unitex": "NUI",
+        "get": "all"
+      },
+      {
+        "tag": "z",
+        "tag_unitex": "NEG",
+        "get": "all"
+      },
+      {
+        "tag": "d",
+        "tag_unitex": "DAT",
+        "get": "1"
+      }
+    ]
+  },
   "relation": {
     "type": "1",
     "left": "250",
