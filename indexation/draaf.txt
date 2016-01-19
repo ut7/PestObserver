@@ -1,0 +1,69 @@
+# TODO: remplacer par les URL des régions fusionnées
+
+# draaf.alsace.agriculture.gouv.fr
+http://draaf.alsace.agriculture.gouv.fr/Axe-5-Le-reseau-de-surveillance
+
+# draaf.aquitaine.agriculture.gouv.fr
+#  via http://draaf.aquitaine.agriculture.gouv.fr/Les-Bulletins-de-Sante-Vegetal-BSV
+http://www.aquitainagri.fr/menu-horizontal/publications/bulletins-de-sante-du-vegetal-bsv.html
+
+# draaf.auvergne.agriculture.gouv.fr
+http://draaf.auvergne.agriculture.gouv.fr/Bulletin-de-sante-du-vegetal
+
+# draaf.basse-normandie.agriculture.gouv.fr
+http://draaf.basse-normandie.agriculture.gouv.fr/Bulletin-de-sante-du-vegetal,319
+
+# draaf.bourgogne.agriculture.gouv.fr
+http://draaf.alsace.agriculture.gouv.fr/Bulletins-de-sante-du-vegetal-2015
+
+# draaf.bretagne.agriculture.gouv.fr
+http://draaf.bretagne.agriculture.gouv.fr/Bulletins-de-sante-du-vegetal-BSV
+
+# draaf.centre.agriculture.gouv.fr
+http://draaf.centre.agriculture.gouv.fr/Bulletin-de-Sante-du-Vegetal-BSV
+
+# draaf.champagne-ardenne.agriculture.gouv.fr
+http://draaf.champagne-ardenne.agriculture.gouv.fr/Bulletin-de-Sante-du-Vegetal-BSV
+
+# http://draaf.corse.agriculture.gouv.fr
+http://draaf.corse.agriculture.gouv.fr/Les-bulletins-de-sante-du-vegetal
+
+# draaf.franche-comte.agriculture.gouv.fr
+http://draaf.franche-comte.agriculture.gouv.fr/Bulletins-de-Sante-du-Vegetal
+
+# draaf.haute-normandie.agriculture.gouv.fr
+http://draaf.haute-normandie.agriculture.gouv.fr/Bulletins-de-Sante-du-Vegetal
+
+# driaaf.ile-de-france.agriculture.gouv.fr
+http://driaaf.ile-de-france.agriculture.gouv.fr/Bulletin-de-sante-du-vegetal
+
+# draaf.languedoc-roussillon.agriculture.gouv.fr
+http://draaf.languedoc-roussillon.agriculture.gouv.fr/Bulletins-de-Sante-du-Vegetal,261
+
+# draaf.limousin.agriculture.gouv.fr
+http://limousin.synagri.com/synagri/bulletins-de-sante-du-vegetal-00013060
+
+# draaf.lorraine.agriculture.gouv.fr
+http://draaf.lorraine.agriculture.gouv.fr/BSV-de-l-annee-en-cours
+
+# draaf.midi-pyrenees.agriculture.gouv.fr
+http://draaf.midi-pyrenees.agriculture.gouv.fr/Bulletin-de-Sante-du-Vegetal
+
+# draaf.nord-pas-de-calais.agriculture.gouv.fr
+# future (http://draaf.nord-pas-de-calais.agriculture.gouv.fr/fusion-des-regions,2517) : draaf.nord-pas-de-calais-picardie.agriculture.gouv.fr
+http://draaf.nord-pas-de-calais.agriculture.gouv.fr/Sante-des-vegetaux
+
+# draaf.paca.agriculture.gouv.fr
+http://draaf.paca.agriculture.gouv.fr/Bulletin-de-sante-du-vegetal-BSV
+
+# draaf.pays-de-la-loire.agriculture.gouv.fr
+http://draaf.pays-de-la-loire.agriculture.gouv.fr/Bulletins-de-Sante-du-Vegetal
+
+# draaf.picardie.agriculture.gouv.fr
+http://draaf.picardie.agriculture.gouv.fr/Bulletin-de-Sante-du-Vegetal-BSV
+
+# draaf.poitou-charentes.agriculture.gouv.fr
+http://draaf.poitou-charentes.agriculture.gouv.fr/Bulletins-de-sante-du-vegetal,64
+
+# draaf.rhone-alpes.agriculture.gouv.fr
+http://draaf.rhone-alpes.agriculture.gouv.fr/Le-Bulletin-de-Sante-du-Vegetal
