@@ -1,7 +1,7 @@
 FROM r-base
 
 RUN apt-get update \
- && apt-get install -y openjdk-7-jre-headless libssl-dev libcurl4-openssl-dev libxml2-dev \
+ && apt-get install -y default-jdk libssl-dev libcurl4-openssl-dev libxml2-dev \
                        python2.7 python-pip libjson-perl
 
 RUN pip install pdfminer
