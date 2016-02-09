@@ -15,7 +15,7 @@ RUN cd /opt \
 RUN R -e "install.packages('devtools')"
 
 # RUN R -e "library('devtools'); install_github('win-stub/x.ent')"
-RUN R -e "library('devtools'); install_github('ut7/x.ent', ref='5c24ecf')"
+RUN R -e "library('devtools'); install_github('ut7/x.ent', ref='d376ee5')"
 
 RUN mkdir /work
 
