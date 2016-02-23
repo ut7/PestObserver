@@ -5,7 +5,7 @@ download() {
   local source_url=$2
 
   >&2 echo "Downloading BSV from: $source_url"
-  wget -N -L -r -l6 --trust-server-names --accept-regex="$regex" "$source_url"
+  wget --timestamping --relative --recursive -l6 --trust-server-names --accept-regex="$regex" "$source_url"
   #find . -type f ! -name "*.pdf" -exec rm {} \;
 }
 
