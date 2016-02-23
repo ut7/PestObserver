@@ -12,16 +12,18 @@ RUN cd /opt \
  && (cd Unitex3.0/Src/C++/build && make install) \
  && rm Unitex3.0.zip
 
+ENV UNITEX_HOME=/opt/Unitex3.0
+
 RUN mkdir -p /vespa/R-lib
 ENV R_LIBS_USER=/vespa/R-lib
 
 WORKDIR /vespa
 
-COPY install_x.ent.sh /vespa
+COPY install_x.ent.sh /vespa/
+COPY indexation/ini.json.dist /vespa/indexation/
+
 RUN ./install_x.ent.sh
 
 COPY . /vespa
-
-COPY indexation/ini.json /vespa/R-lib/x.ent/www/config/ini.json
 
 CMD ["make"]
