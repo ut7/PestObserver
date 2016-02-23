@@ -1,7 +1,10 @@
 .PHONY : default dico sql clean-sql test
 
-R_LIB_PATH:=$(shell R --slave -e "cat(.libPaths()[1])")
-XENT_HOME:=$(R_LIB_PATH)/x.ent
+R_LIBS_USER=$(abspath R-lib)
+export R_LIBS_USER
+
+XENT_HOME:=$(R_LIBS_USER)/x.ent
+XENT_DATA_DIR:=$(XENT_HOME)/Perl/data
 
 REPORTS_DIR:=web/reports
 REPORTS_OCR_DIR:=reportsOCR
@@ -15,7 +18,7 @@ default: $(INDEX_OUTPUT_DIR)/output.txt
 
 $(INDEX_OUTPUT_DIR)/output.txt: $(TXTFILES) $(XMLFILES)
 	@mkdir -p "$(INDEX_OUTPUT_DIR)"
-	Rscript -e 'library("x.ent"); xparse()'
+	r -lx.ent -e 'xparse()'
 
 $(REPORTS_OCR_DIR)/%.txt: $(REPORTS_DIR)/%.pdf
 	@mkdir -p "$(REPORTS_OCR_DIR)"
@@ -23,8 +26,8 @@ $(REPORTS_OCR_DIR)/%.txt: $(REPORTS_DIR)/%.pdf
 
 dico:
 	perl -I indexation/Perl -I "$(XENT_HOME)/Perl" indexation/Perl/CreateCSV.pl "$(XENT_HOME)"
-	mkdir -p "$(XENT_HOME)"/Perl/data/csv
-	cp -v "$(XENT_HOME)"/Perl/data/csv_temp/* "$(XENT_HOME)"/Perl/data/csv
+	mkdir -p "$(XENT_DATA_DIR)"/csv
+	cp -v "$(XENT_DATA_DIR)"/csv_temp/* "$(XENT_DATA_DIR)"/csv
 
 sql:
 	perl -I indexation/Perl -I "$(XENT_HOME)/Perl" indexation/Perl/CreateSQL.pl "$(XENT_HOME)"

@@ -6,7 +6,7 @@
     "file": ""
   },
   "result": {
-    "file": "/usr/local/lib/R/site-library/x.ent/out/output.txt"
+    "file": "/vespa/R-lib/x.ent/out/output.txt"
   },
   "dico": [
     {
@@ -61,13 +61,13 @@
   "unitex": {
     "system": {
       "tool_unitex": "/opt/Unitex3.0/App/UnitexToolLogger",
-      "main_graph": "/usr/local/lib/R/site-library/x.ent/Unitex/graphs/VESPA.grf",
+      "main_graph": "/vespa/R-lib/x.ent/Unitex/graphs/VESPA.grf",
       "my_unitex": "/opt/Unitex3.0/French",
       "dico": [
         "/opt/Unitex3.0/French/Dela/dela-fr-public.bin",
-        "/usr/local/lib/R/site-library/x.ent/Unitex/dicos/Delaf_Communes_France_FR_utf8.bin",
-        "/usr/local/lib/R/site-library/x.ent/Unitex/dicos/Delaf_Toponyme_Departement_France_FR_utf8.bin",
-        "/usr/local/lib/R/site-library/x.ent/Unitex/dicos/Delaf_Toponyme_Region_France_FR_utf8.bin"
+        "/vespa/R-lib/x.ent/Unitex/dicos/Delaf_Communes_France_FR_utf8.bin",
+        "/vespa/R-lib/x.ent/Unitex/dicos/Delaf_Toponyme_Departement_France_FR_utf8.bin",
+        "/vespa/R-lib/x.ent/Unitex/dicos/Delaf_Toponyme_Region_France_FR_utf8.bin"
       ]
     },
     "result": [
