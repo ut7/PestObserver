@@ -19,6 +19,13 @@ ENV R_LIBS_USER=/vespa/R-lib
 
 WORKDIR /vespa
 
+# Les packages dont dépend x.ent, qui ne devraient pas trop bouger
+RUN Rscript -e "install.packages(c('devtools', 'brew', 'colorspace', \
+  'dichromat', 'evaluate', 'formatR', 'ggplot2', 'gtable', 'highr', \
+  'httpuv', 'knitr', 'labeling', 'markdown', 'munsell', 'opencpu', \
+  'plyr', 'RColorBrewer', 'Rcpp', 'reshape2', 'rJava', 'scales', \
+  'statmod', 'venneuler', 'xtable', 'yaml'))"
+
 COPY install_x.ent.sh /vespa/
 COPY indexation/ini.json.dist /vespa/indexation/
 
