@@ -14,8 +14,7 @@ Rscript - <<EOF
   if(!require('devtools')) {
     install.packages('devtools', repos='http://cran.us.r-project.org')
   }
-  library('devtools')
-  install_github('win-stub/x.ent', upgrade_dependencies=FALSE)
+  devtools::install_github('win-stub/x.ent', upgrade_dependencies=FALSE)
 EOF
 
 sed -e "s:%VESPA_HOME%:${VESPA_HOME}:g" -e "s:%UNITEX_HOME%:${UNITEX_HOME}:g" \
