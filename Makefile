@@ -62,6 +62,10 @@ load-sql:
 	    -p$(if $(MYSQL_PASSWORD),$(MYSQL_PASSWORD),$(error MYSQL_PASSWORD is not defined)) \
 	    $(if $(MYSQL_DB),$(MYSQL_DB),$(error MYSQL_DB is not defined))
 
+download-bsv:
+	cd indexation && \
+	  perl -I Perl Perl/DownloadBSV.pl
+
 # Runs tests in indexation/Perl/t
 test:
 	cd indexation && \
