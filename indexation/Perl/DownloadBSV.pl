@@ -42,12 +42,38 @@ sub download {
   warn sprintf('[WARNING] wget exited with code %d', $ret >> 8) if $ret != 0;
 }
 
-my $default_regex =
-    'BSV|Archives-BSV|ARCHIVES-BSV|\.pdf|Grandes-[Cc]ultures'
-  . '|Arboriculture|Cultures-legumieres|Lin-oleagineux|Noix|Tabac'
-  . '|Viticulture|Chataigne|Horticulture|Prairie|[Bb]ulletin|Bilan_'
-  . '|Nouvel-article|Campagne|GRANDES-CULTURES|VIGNE|LEGUMES'
-  . '|HORTICULTURE|HOUBLON|ZNA|TABAC|Pour-les|/bsv-';
+my $default_regex = join('|', qw{
+  \.pdf
+  /bsv-
+  ARCHIVES-BSV
+  Arboriculture
+  Archives-BSV
+  BSV
+  Bilan_
+  [Bb]ulletin
+  Campagne
+  Chataigne
+  Cultures-legumieres
+  GRANDES-CULTURES
+  Grandes-[Cc]ultures
+  HORTICULTURE
+  HOUBLON
+  Horticulture
+  LEGUMES
+  Lin-oleagineux
+  Maraichage
+  Noix
+  Nouvel-article
+  Pepinieres
+  Pour-les
+  Prairie
+  TABAC
+  Tabac
+  VIGNE
+  Viticulture
+  ZNA
+  Zones-non-agricoles
+});
 
 download($default_regex, 'http://draaf.alsace-champagne-ardenne-lorraine.agriculture.gouv.fr/Surveillance-des-organismes');
 
@@ -93,6 +119,10 @@ download($default_regex
   . '|/20[0-9][0-9]|Cultures-Mar|Oleiculture|Riz|Jardins|Vigne',
   'http://draaf.paca.agriculture.gouv.fr/Bulletin-de-sante-du-vegetal-BSV');
 
-download($default_regex, 'http://draaf.pays-de-la-loire.agriculture.gouv.fr/Derniers-BSV');
-download($default_regex, 'http://www.paysdelaloire.chambagri.fr/menu/vegetal/surveillance-biologique-du-territoire/bsv-grandes-cultures.html');
-download($default_regex, 'http://driaaf.ile-de-france.agriculture.gouv.fr/Epidemiosurveillance-et-Bulletin');
+download($default_regex,
+  'http://draaf.pays-de-la-loire.agriculture.gouv.fr/Derniers-BSV');
+download($default_regex,
+  'http://www.paysdelaloire.chambagri.fr/menu/vegetal/surveillance-biologique-du-territoire/bsv-grandes-cultures.html');
+
+download($default_regex,
+  'http://driaaf.ile-de-france.agriculture.gouv.fr/Epidemiosurveillance-et-Bulletin');
