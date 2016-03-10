@@ -64,7 +64,11 @@ load-sql:
 
 download-bsv:
 	cd indexation && \
-	  perl -I Perl Perl/DownloadBSV.pl
+	  perl -I Perl Perl/DownloadBSV.pl --to=data/downloadedBSV
+
+copy-bsv:
+	cd indexation && \
+	  perl -I Perl Perl/CopyBSV.pl --from=data/downloadedBSV --to=../web/reports
 
 # Runs tests in indexation/Perl/t
 test:

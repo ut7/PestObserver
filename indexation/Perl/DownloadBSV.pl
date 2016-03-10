@@ -7,11 +7,11 @@ use URI;
 
 my $only = '.*';
 my $verbose = 0;
-GetOptions('only=s' => \$only, 'verbose' => \$verbose) or die;
+my $targetdir = '.';
+GetOptions('only=s' => \$only, 'to=s' => \$targetdir, 'verbose' => \$verbose) or die;
 
-my $REPORTS='data/downloadedBSV';
-make_path($REPORTS);
-chdir $REPORTS;
+make_path($targetdir);
+chdir $targetdir;
 
 sub download {
   my ($regex, $source_url, @extra_options) = @_;
