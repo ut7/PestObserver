@@ -18,7 +18,7 @@ TXTFILES:=$(filter-out $(XMLFILES:.xml=.txt),$(patsubst $(REPORTS_DIR)/%.pdf,$(R
 default: help
 
 help:
-	@echo "Usage: make (index|dico|sql|load-sql|test)"
+	@echo "Usage: make (index|dico|sql|load-sql|download-bsv|copy-bsv|test)"
 
 # Updates the index in R-lib/x.ent/out/output.txt
 index: $(INDEX_OUTPUT_FILE)
